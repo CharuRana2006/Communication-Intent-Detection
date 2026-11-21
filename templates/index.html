@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Communication & Intent Detection</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 Communication & Intent Detection</h1>
+
+        <p class="subtitle">
+            NLP-Based Communication Analyzer
+        </p>
+
+        <div class="input-section">
+
+            <label for="message">
+                Enter your message
+            </label>
+
+            <textarea
+                id="message"
+                placeholder="Type your message here..."
+            ></textarea>
+
+            <button onclick="analyzeMessage()">
+                Analyze Message
+            </button>
+
+        </div>
+
+        <div id="result" class="result">
+
+            <h2>Analysis Result</h2>
+
+            <p>
+                Your detected intent will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
